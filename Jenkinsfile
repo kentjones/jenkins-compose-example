@@ -3,9 +3,9 @@ pipeline {
   stages {
     stage("verify tooling") {
       steps {
-        sh ' java --version '
-      }
-      steps {
+        step {
+          sh ' java --version '
+        }
         sh '''
           docker version
           docker info
