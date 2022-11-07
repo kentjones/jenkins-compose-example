@@ -1,6 +1,11 @@
 pipeline {
   agent any
   stages {
+    stage("verify java") {
+      steps {
+          sh ' java --version '
+      }
+    }
     stage("verify tooling") {
       steps {
         step {
