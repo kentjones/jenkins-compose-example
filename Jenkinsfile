@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("verify java") {
       steps {
-          sh ' java --version '
+          sh ' java -version '
       }
     }
     stage("verify tooling") {
