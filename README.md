@@ -4,7 +4,8 @@ Run docker compose using Jenkins.
 
 ## Prerequisite
 
-The Jenkins Agent must have Docker installed. 
+The Jenkins Agent must have Docker installed.
+
 
 ## See Also
 
