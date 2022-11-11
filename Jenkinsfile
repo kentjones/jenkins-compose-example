@@ -1,11 +1,14 @@
 pipeline {
   agent {
-    dockerfile true
+    docker{image 'node:16-alpine' } 
   }
   stages {
     stage("verify java") {
       steps {
-          sh ' java -version '
+          sh ''' 
+            java -version 
+            node -version 
+          '''
       }
     }
     stage("verify tooling") {
